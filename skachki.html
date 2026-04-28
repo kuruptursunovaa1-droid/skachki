@@ -20,43 +20,31 @@
             content: ''; position: absolute; top: 0; left: 0; right: 0; height: 5px;
             background: linear-gradient(90deg, #c9a84c, #f1d875, #c9a84c, #f1d875, #c9a84c);
         }
-
-        /* ЗОЛОТОЙ ЗАГОЛОВОК */
         .main-title {
             text-align: center; font-size: 30px; font-weight: 900; color: #c9a84c;
             margin-top: 6px; margin-bottom: 6px; letter-spacing: 1.5px; line-height: 1.1;
-            text-transform: uppercase;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+            text-transform: uppercase; text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
         }
-
-        /* ПАМЯТИ — как Татли-Булак */
         .sub-title {
             text-align: center; font-size: 14px; font-weight: 700; color: #5a4a1a;
             margin-bottom: 4px; line-height: 1.4;
-            background: #fefdf7; padding: 6px; border-radius: 10px;
-            border: 1px dashed #c9a84c;
+            background: #fefdf7; padding: 6px; border-radius: 10px; border: 1px dashed #c9a84c;
         }
-       .sub-title .red { color: #c9a84c; }
+        .sub-title .gold { color: #c9a84c; }
         .date-big {
             text-align: center; font-size: 20px; font-weight: 900; color: #fff;
             margin: 8px 0 6px; letter-spacing: 1px;
             background: linear-gradient(135deg, #c9a84c, #e0bc5a);
-            padding: 10px; border-radius: 12px;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+            padding: 10px; border-radius: 12px; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
         }
-
         .place-info {
             text-align: center; font-size: 14px; font-weight: 700; color: #5a4a1a;
             margin: 6px 0 12px; line-height: 1.4;
-            background: #fefdf7; padding: 8px; border-radius: 10px;
-            border: 1px dashed #c9a84c;
+            background: #fefdf7; padding: 8px; border-radius: 10px; border: 1px dashed #c9a84c;
         }
-
-        /* Призы */
         .prizes-block {
             background: linear-gradient(135deg, #fdf9e8, #fefdf7);
-            border: 2px solid #c9a84c; border-radius: 16px;
-            padding: 14px; margin-bottom: 18px;
+            border: 2px solid #c9a84c; border-radius: 16px; padding: 14px; margin-bottom: 18px;
         }
         .prizes-title {
             text-align: center; font-size: 14px; font-weight: 800; color: #2d5a27;
@@ -66,18 +54,17 @@
             display: flex; align-items: center; gap: 8px;
             padding: 7px 10px; margin-bottom: 5px;
             background: white; border-radius: 10px;
-            font-size: 13px; font-weight: 600; color: #333;
-            border: 1px solid #e0dcc8;
+            font-size: 13px; font-weight: 600; color: #333; border: 1px solid #e0dcc8;
         }
         .prize-item .icon { font-size: 18px; flex-shrink: 0; }
         .prize-item.gold { border-left: 4px solid #c9a84c; }
         .prize-item.silver { border-left: 4px solid #aaa; }
         .prize-item.bronze { border-left: 4px solid #cd7f32; }
         .prize-item.gift { border-left: 4px solid #27ae60; }
-
         .block { margin-bottom: 14px; }
         label { display: block; font-size: 13px; font-weight: 700; color: #444; margin-bottom: 5px; letter-spacing: 0.2px; }
-        input[type="text"], input[type="number"] {
+        .optional { font-weight: 400; color: #999; font-size: 11px; }
+        input[type="text"], input[type="number"], input[type="tel"] {
             width: 100%; padding: 13px 14px; border: 2px solid #e0dcc8; border-radius: 14px;
             font-size: 16px; font-family: inherit; background: #fefdf7; transition: all 0.2s; color: #333; -webkit-appearance: none;
         }
@@ -108,7 +95,6 @@
         .status { text-align: center; margin-top: 10px; font-size: 13px; font-weight: 600; min-height: 20px; }
         .status.success { color: #27ae60; }
         .status.error { color: #c0392b; }
-
         .contact-info {
             text-align: center; font-size: 12px; color: #888; margin-top: 14px;
             padding: 8px; border-top: 1px solid #e0dcc8;
@@ -118,57 +104,45 @@
 <body>
 
 <div class="card">
-    <!-- ЗОЛОТОЙ ЗАГОЛОВОК -->
     <h1 class="main-title">III Ежегодные<br>Конные скачки</h1>
-
-    <!-- ПАМЯТИ — как Татли-Булак -->
-   <div class="sub-title">ПАМЯТИ <span class="red">БЕГАЛИ КУРУПТУРСУНОВА</span><br>И ДНЯ ПОБЕДЫ</div> 
-    <!-- ДАТА -->
+    <div class="sub-title">ПАМЯТИ <span class="gold">БЕГАЛИ КУРУПТУРСУНОВА</span><br>И ДНЯ ПОБЕДЫ</div>
     <div class="date-big">📅 8 мая 2026 года</div>
-
-    <!-- МЕСТО -->
     <div class="place-info">
         📍 с. Таьтли-Булак (Калининаул)<br>
         🏇 Ипподром им. Бегали Куруптурсунова
     </div>
 
-    <!-- ПРИЗЫ -->
     <div class="prizes-block">
         <div class="prizes-title">🏆 Призовой фонд</div>
-
-        <div class="prize-item gold">
-            <span class="icon">🥇</span> <b>Среди первых мест:</b>
-        </div>
-        <div class="prize-item gold">
-            <span class="icon">🕋</span> Путёвка на умра
-        </div>
-        <div class="prize-item gold">
-            <span class="icon">🎵</span> Ногайская домбра
-        </div>
-        <div class="prize-item gold">
-            <span class="icon">💳</span> 2 сертификата по 15 000₽
-        </div>
-
-        <div class="prize-item silver">
-            <span class="icon">🥈</span> <b>2 место</b> — 10 000₽
-        </div>
-        <div class="prize-item bronze">
-            <span class="icon">🥉</span> <b>3 место</b> — 5 000₽
-        </div>
-        <div class="prize-item gift">
-            <span class="icon">🎁</span> <b>Поощрительный приз</b> — самому юному участнику — детская домбра
-        </div>
+        <div class="prize-item gold"><span class="icon">🥇</span> <b>Среди первых мест:</b></div>
+        <div class="prize-item gold"><span class="icon">🕋</span> Путёвка на умра</div>
+        <div class="prize-item gold"><span class="icon">🎵</span> Ногайская домбра</div>
+        <div class="prize-item gold"><span class="icon">💳</span> 2 сертификата по 15 000₽</div>
+        <div class="prize-item silver"><span class="icon">🥈</span> <b>2 место</b> — 10 000₽</div>
+        <div class="prize-item bronze"><span class="icon">🥉</span> <b>3 место</b> — 5 000₽</div>
+        <div class="prize-item gift"><span class="icon">🎁</span> <b>Поощрительный приз</b> — самому юному участнику — детская домбра</div>
     </div>
 
-    <!-- ФОРМА -->
     <form id="raceForm">
         <div class="block">
-            <label>👤 Владелец лошади</label>
-            <input type="text" id="owner" placeholder="ФИО владельца">
+            <label>👤 Владелец (ФИО)</label>
+            <input type="text" id="owner" placeholder="Фамилия Имя Отчество">
+        </div>
+        <div class="block">
+            <label>📞 Телефон владельца</label>
+            <input type="tel" id="phone" placeholder="+7 (___) ___-__-__">
+        </div>
+        <div class="block">
+            <label>🏠 Какой населенный пункт представляете?</label>
+            <input type="text" id="city" placeholder="Например: с.Батыр-Мурза">
+        </div>
+        <div class="block">
+            <label>🏇 Имя жокея <span class="optional">(можно не заполнять)</span></label>
+            <input type="text" id="jockey" placeholder="Имя жокея">
         </div>
         <div class="block">
             <label>🐴 Имя лошади</label>
-            <input type="text" id="horseName" placeholder="Имя">
+            <input type="text" id="horseName" placeholder="Имя лошади">
         </div>
         <div class="block">
             <label>🎂 Возраст лошади</label>
@@ -181,18 +155,10 @@
         <div class="block">
             <label>🏁 Выберите основной заезд:</label>
             <div class="radio-group">
-                <label class="radio-option">
-                    <input type="radio" name="firstRace" value="Чистокровные — 1800 м" data-type="thoroughbred"> 🥇 Чистокровные — 1800 м
-                </label>
-                <label class="radio-option">
-                    <input type="radio" name="firstRace" value="Полукровные от 3 лет — 2 круга" data-type="halfbred_adult"> 🥈 Полукровные от 3 лет — 2 круга
-                </label>
-                <label class="radio-option">
-                    <input type="radio" name="firstRace" value="Местная порода — 1 круг" data-type="local"> 🥉 Местная порода — 1 круг
-                </label>
-                <label class="radio-option">
-                    <input type="radio" name="firstRace" value="Полукровные до 3 лет — 1600 м" data-type="halfbred_young"> 🏇 Полукровные до 3 лет — 1600 м
-                </label>
+                <label class="radio-option"><input type="radio" name="firstRace" value="Чистокровные — 1800 м" data-type="thoroughbred"> 🥇 Чистокровные — 1800 м</label>
+                <label class="radio-option"><input type="radio" name="firstRace" value="Полукровные от 3 лет — 2 круга" data-type="halfbred_adult"> 🥈 Полукровные от 3 лет — 2 круга</label>
+                <label class="radio-option"><input type="radio" name="firstRace" value="Местная порода — 1 круг" data-type="local"> 🥉 Местная порода — 1 круг</label>
+                <label class="radio-option"><input type="radio" name="firstRace" value="Полукровные до 3 лет — 1600 м" data-type="halfbred_young"> 🏇 Полукровные до 3 лет — 1600 м</label>
             </div>
         </div>
 
@@ -204,18 +170,10 @@
         <div id="secondBlock">
             <label>🏁 Выберите второй заезд:</label>
             <div class="radio-group">
-                <label class="radio-option">
-                    <input type="radio" name="secondRace" value="Чистокровные — 1800 м" data-type="thoroughbred"> 🥇 Чистокровные — 1800 м
-                </label>
-                <label class="radio-option">
-                    <input type="radio" name="secondRace" value="Полукровные от 3 лет — 2 круга" data-type="halfbred_adult"> 🥈 Полукровные от 3 лет — 2 круга
-                </label>
-                <label class="radio-option">
-                    <input type="radio" name="secondRace" value="Местная порода — 1 круг" data-type="local"> 🥉 Местная порода — 1 круг
-                </label>
-                <label class="radio-option">
-                    <input type="radio" name="secondRace" value="Полукровные до 3 лет — 1600 м" data-type="halfbred_young"> 🏇 Полукровные до 3 лет — 1600 м
-                </label>
+                <label class="radio-option"><input type="radio" name="secondRace" value="Чистокровные — 1800 м" data-type="thoroughbred"> 🥇 Чистокровные — 1800 м</label>
+                <label class="radio-option"><input type="radio" name="secondRace" value="Полукровные от 3 лет — 2 круга" data-type="halfbred_adult"> 🥈 Полукровные от 3 лет — 2 круга</label>
+                <label class="radio-option"><input type="radio" name="secondRace" value="Местная порода — 1 круг" data-type="local"> 🥉 Местная порода — 1 круг</label>
+                <label class="radio-option"><input type="radio" name="secondRace" value="Полукровные до 3 лет — 1600 м" data-type="halfbred_young"> 🏇 Полукровные до 3 лет — 1600 м</label>
             </div>
             <span class="error" id="sameRaceError">⚠ Нельзя выбрать один и тот же заезд дважды</span>
         </div>
@@ -264,10 +222,7 @@
 
     ageInput.addEventListener('input', checkAge);
     document.querySelectorAll('input[name="firstRace"], input[name="secondRace"]').forEach(el => {
-        el.addEventListener('change', function() {
-            checkAge();
-            checkSame();
-        });
+        el.addEventListener('change', function() { checkAge(); checkSame(); });
     });
 
     function checkSame() {
@@ -284,6 +239,9 @@
 
     async function submitForm() {
         const owner = document.getElementById('owner').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const city = document.getElementById('city').value.trim();
+        const jockey = document.getElementById('jockey').value.trim();
         const horse = document.getElementById('horseName').value.trim();
         const age = parseInt(ageInput.value);
         const first = document.querySelector('input[name="firstRace"]:checked');
@@ -291,14 +249,15 @@
         const second = document.querySelector('input[name="secondRace"]:checked');
 
         if (!owner) { alert('Введите ФИО владельца!'); return; }
+        if (!phone) { alert('Введите телефон владельца!'); return; }
+        if (!city) { alert('Введите населенный пункт!'); return; }
         if (!horse) { alert('Введите имя лошади!'); return; }
         if (isNaN(age)) { alert('Введите возраст лошади!'); return; }
         if (!first) { alert('Выберите основной заезд!'); return; }
         if (isDouble && !second) { alert('Выберите второй заезд или уберите галочку!'); return; }
         if (!checkSame()) return;
 
-        const youngPicked = (first.dataset.type === 'halfbred_young') ||
-                            (isDouble && second && second.dataset.type === 'halfbred_young');
+        const youngPicked = (first.dataset.type === 'halfbred_young') || (isDouble && second && second.dataset.type === 'halfbred_young');
         if (youngPicked && (age < 0 || age > 2)) {
             ageError.style.display = 'inline';
             return;
@@ -309,13 +268,16 @@
         if (isDouble && second) races += ' + ' + second.value;
 
         const message = `📬 *Новая заявка на скачки!*\n\n` +
-                        `👤 *Владелец:* ${owner}\n` +
-                        `🐴 *Имя лошади:* ${horse}\n` +
-                        `🎂 *Возраст:* ${age}\n` +
-                        `🏁 *Заезды:* ${races}\n\n` +
-                        `📅 *Событие:* III Конные скачки, 8 мая 2026\n` +
-                        `📍 с. Татли-Булак\n` +
-                        `🕒 _${new Date().toLocaleString('ru-RU')}_`;
+            `👤 *Владелец:* ${owner}\n` +
+            `📞 *Телефон:* ${phone}\n` +
+            `🏠 *Нас. пункт:* ${city}\n` +
+            `🏇 *Жокей:* ${jockey || 'Не указан'}\n` +
+            `🐴 *Имя лошади:* ${horse}\n` +
+            `🎂 *Возраст:* ${age}\n` +
+            `🏁 *Заезды:* ${races}\n\n` +
+            `📅 *Событие:* III Конные скачки, 8 мая 2026\n` +
+            `📍 с. Татли-Булак\n` +
+            `🕒 _${new Date().toLocaleString('ru-RU')}_`;
 
         submitBtn.textContent = '⏳ Отправка...';
         submitBtn.disabled = true;
@@ -325,20 +287,17 @@
             const response = await fetch(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    chat_id: CHAT_ID,
-                    text: message,
-                    parse_mode: 'Markdown'
-                })
+                body: JSON.stringify({ chat_id: CHAT_ID, text: message, parse_mode: 'Markdown' })
             });
-
             const data = await response.json();
-
             if (data.ok) {
                 submitBtn.textContent = '✅ Заявка отправлена!';
                 statusDiv.textContent = '🎉 Спасибо! Заявка принята.';
                 statusDiv.className = 'status success';
                 document.getElementById('owner').value = '';
+                document.getElementById('phone').value = '';
+                document.getElementById('city').value = '';
+                document.getElementById('jockey').value = '';
                 document.getElementById('horseName').value = '';
                 document.getElementById('age').value = '';
                 document.querySelectorAll('input[name="firstRace"]').forEach(r => r.checked = false);
@@ -352,13 +311,11 @@
         } catch (error) {
             alert('Ошибка связи: ' + error.message);
         }
-
         submitBtn.textContent = '✅ Отправить заявку';
         submitBtn.disabled = false;
         statusDiv.textContent = '';
         statusDiv.className = 'status';
     }
 </script>
-
 </body>
 </html>
